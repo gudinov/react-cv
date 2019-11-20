@@ -1,0 +1,94 @@
+@mixin shadow-content($position) {
+    z-index: 1;
+    width: calc(100% - 30px);
+    height: 50px;
+    background: linear-gradient(to $position, $primary-theme-base-color 45%, $primary-theme-base-color 23%, transparent 100%);
+}
+
+.right-slider {
+    z-index: 1;
+    flex-grow: 7;
+
+   &__scroll > div:nth-child(3) {
+        width: 5px !important;
+    }
+
+    &__scroll > div:nth-child(2)  {
+        display: none !important;
+    }
+
+    &__scroll > div {
+        overflow-x: hidden !important;
+    }
+
+    &__scroll > div:nth-child(2) > div  {
+        display: none !important;
+    }
+
+    &__scroll > div:nth-child(3) > div {
+        position: absolute !important;
+        z-index: 3;
+        background-color: $primary-theme-main-bg-color !important;
+    }
+
+    &__content-wrapper {
+
+        & h1,
+        & h2 {
+            color: $primary-base-white-color;
+        }
+
+        & p {
+            line-height: 1.4;
+            color: $primary-theme-content-color;
+        }
+
+        margin-top: 5%;
+        margin-right: 3%;
+    }
+
+    &__shadow-content {
+        position: relative;
+        height: 85%;
+        padding: 3% 3% 3% 5%;
+        margin-top: 3vh;
+        margin-bottom: auto;
+        overflow: hidden;
+        background: $primary-theme-base-color;
+
+        &::before {
+            @include shadow-content(bottom);
+
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            @include shadow-content(top);
+
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .right-slider  {
+        flex-grow: 9;
+
+        &__content-wrapper {
+            margin-bottom: 6%;
+            margin-top: 6%;
+        }
+
+        &__shadow-content {
+            height: 100%;
+            padding: 3% 0 3% 3%;
+            margin: 0;
+        }
+    }
+}

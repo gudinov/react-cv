@@ -1,0 +1,46 @@
+.tech {
+    padding-top: 1.2em;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        padding: 2em;
+        text-align: center;
+    }
+
+    &__icon {
+        display: inline-block;
+
+        & svg {
+            font-size: 4rem;
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+        line-height: 2.3em;
+        color: $primary-theme-content-color;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tech {
+
+        &__item {
+            padding: 1em;
+        }
+
+        &__name {
+            font-size: .8em;
+            font-weight: 600;
+            line-height: 2.3em;
+            color: $primary-theme-content-color;
+            text-transform: uppercase;
+        }
+    }
+}

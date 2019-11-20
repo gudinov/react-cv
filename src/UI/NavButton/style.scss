@@ -1,0 +1,49 @@
+.nav__button {
+    display: inline-block;
+
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid transparent;
+        border-radius: 60px;
+        transition: border-color .3s;
+
+        &:hover {
+            border-color: $primary-base-yellow-color;
+        }
+    }
+}
+
+.nav__button_active {
+    & .nav__icon svg {
+        font-size: 2rem;
+        color: $primary-base-yellow-color;
+    }
+}
+
+.nav__icon {
+    display: inline-block;
+
+    & svg {
+        font-size: 1.6rem;
+        color: $primary-base-white-color;
+        transition: color .3s ease-in;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav__icon {
+        & svg {
+            font-size: 1.3rem;
+        }
+    }
+
+    .nav__button_active {
+        & .nav__icon svg {
+            font-size: 1.8rem;
+        }
+    }
+}

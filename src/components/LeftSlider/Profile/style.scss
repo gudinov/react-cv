@@ -1,0 +1,101 @@
+.profile {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    background: $primary-theme-base-color;
+    box-shadow: 0 32px 84px 0 $primary-shadow-black-color;
+
+    &__board {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__deco-img-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+    }
+
+    &__deco-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url('../../../assets/images/1039330205.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    &__deco-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, $primary-profile-img-a 0%, $primary-profile-img-b 35%, $primary-profile-img-c 100%);
+    }
+
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+
+        & li {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        & a {
+            text-align: center;
+        }
+
+        & svg {
+            font-size: 1.7rem;
+            line-height: 2;
+            color: $primary-theme-content-color;
+            transition: color .3s ease-in;
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        color: $primary-base-white-color;
+    }
+}
+
+.skype:hover svg,
+.skype:focus svg {
+    color: $base-skype;
+}
+
+.vk:hover svg,
+.vk:focus svg {
+    color: $base-vk;
+}
+
+.telegram:hover svg,
+.telegram:focus svg {
+    color: $base-telegram;
+}
+
+@media screen and (max-width: 800px) {
+    .profile {
+        display: none;
+    }
+}

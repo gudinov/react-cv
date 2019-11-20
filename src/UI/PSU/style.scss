@@ -1,0 +1,15 @@
+.psu {
+  display: inline-block;
+
+  & a {
+    display: inherit;
+    vertical-align: top;
+  }
+
+  &__logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: url(/src/assets/images/psu-logo.png) no-repeat center center;
+  }
+}

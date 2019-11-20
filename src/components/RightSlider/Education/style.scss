@@ -1,0 +1,27 @@
+@mixin time-text() {
+  font-weight: 600;
+  color: $primary-base-yellow-color;
+}
+
+.education {
+  &__time-interval {
+    @include time-text();
+
+    display: inline;
+
+    & time {
+      @include time-text();
+
+    }
+  }
+
+  &__psu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  & h3 {
+    text-align: center;
+    color: $primary-theme-content-color;
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+    position: relative;
+    margin-top: 3vh;
+    margin-bottom: auto;
+    height: 85%;
+    min-width: 70px;
+    background: $primary-theme-base-color;
+    box-shadow: 0 32px 84px 0 $primary-shadow-black-color;
+
+    &__wrapper-button {
+        margin: 15%;
+    }
+
+    &__wrapper-button_bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        height: 100%;
+        margin: 0;
+    }
+}
