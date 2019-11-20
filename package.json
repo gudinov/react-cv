@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --config=config/webpack.dev.js --hot",
     "build": "webpack --config=config/webpack.prod.js",
     "analyze": "cross-env ENABLE_ANALYZER=true npm run build",
-    "lint": "eslint './src/**/*.{js,jsx}'",
+    "lint": "eslint './src/**/*.{js|jsx}'",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
