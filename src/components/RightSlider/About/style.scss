@@ -61,6 +61,10 @@
 
     &__info-list {
         display: flex;
+
+        & div:nth-child(1) {
+            white-space: nowrap;
+        }
     }
 
     &__info-item {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import About from 'components/RightSlider/About/About';
-import Works from 'components/RightSlider/Works/Works';
+import Works from 'components/RightSlider/Works/Work';
 import Education from 'components/RightSlider/Education/Education';
 import Contact from 'components/RightSlider/Contact/Contact';
 

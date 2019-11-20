@@ -5,7 +5,7 @@ import Timeline from 'UI/Timeline/Timeline';
 
 import { WORKS } from './constants';
 
-function Works({ t }) {
+function Work({ t }) {
   return (
     <div className="right-slider__content-wrapper">
       <h1>{t('works-title')}</h1>
@@ -14,4 +14,4 @@ function Works({ t }) {
   );
 }
 
-export default withTranslation('works')(Works);
+export default withTranslation('works')(Work);

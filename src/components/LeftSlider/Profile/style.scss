@@ -2,17 +2,11 @@
     position: relative;
     display: inline-flex;
     flex-direction: column;
-    width: 100%;
+    width: 15vw;
+    max-width: 400px;
+    min-width: 300px;
     background: $primary-theme-base-color;
     box-shadow: 0 32px 84px 0 $primary-shadow-black-color;
-
-    &__board {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        height: 100%;
-    }
 
     &__deco-img-wrapper {
         position: absolute;
@@ -20,15 +14,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
     }
 
     &__deco-img {
         position: relative;
         width: 100%;
         height: 100%;
-        background: url('../../../assets/images/1039330205.jpg') center no-repeat;
+        background: url('../../../assets/images/-q8hegIzAKM.jpg') center no-repeat;
         background-size: cover;
+    }
+
+    &__board {
+        height: 100%;
     }
 
     &__deco-shadow {
@@ -37,15 +34,15 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, $primary-profile-img-a 0%, $primary-profile-img-b 35%, $primary-profile-img-c 100%);
+        background: linear-gradient(0deg, $primary-profile-img-a 35%, $primary-profile-img-b 64%, $primary-profile-img-c 100%);
     }
-
 
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 1;
     }
 
     &__social {
@@ -94,7 +91,7 @@
     color: $base-telegram;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .profile {
         display: none;
     }
