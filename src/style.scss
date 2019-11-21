@@ -1,0 +1,60 @@
+@import '~normalize.css';
+
+#root {
+  background: $primary-theme-main-bg-color;
+}
+
+.body {
+  overflow: hidden;
+}
+
+html {
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+p,
+li,
+span,
+div,
+a,
+time {
+  font-family: 'Muli', sans-serif;
+  color: $primary-theme-content-color;
+}
+
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: $primary-base-white-color;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Hepta Slab', serif;
+  color: $primary-base-white-color;
+}

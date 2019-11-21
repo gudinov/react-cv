@@ -10,23 +10,23 @@ import { EMPTY_CLASS } from 'constants/common';
 import './style.scss';
 import { slideAnimationClass } from './constants';
 
-// TODO: refactoring scrollbar
 const RightSliderScrollbar = withRouter(({ children, location: { pathname } }) => {
   const [statusAnimation, setStatusAnimation] = useState(false);
   const rightSliderRef = useRef(null);
+  const scrollBarRef = useRef(null);
   const addAnimation = () => setStatusAnimation(true);
   const removeAnimation = () => setStatusAnimation(false);
 
   useEffect(() => {
+    scrollBarRef.current.scrollTop(0);
     rightSliderRef.current.addEventListener('animationend', removeAnimation, { once: true });
     addAnimation();
-
     return removeAnimation;
   }, [pathname]);
 
   return (
     <article className={`right-slider__shadow-content ${statusAnimation ? slideAnimationClass : EMPTY_CLASS}`} ref={rightSliderRef}>
-      <Scrollbars className="right-slider__scroll" hideTracksWhenNotNeeded>
+      <Scrollbars className="right-slider__scroll" hideTracksWhenNotNeeded ref={scrollBarRef}>
         {children}
       </Scrollbars>
     </article>
@@ -40,7 +40,7 @@ const RightSlider = () => (
         exact
         path="/"
         render={(props) => (
-          <RightSliderScrollbar {...props}>
+          <RightSliderScrollbar>
             <About {...props} />
           </RightSliderScrollbar>
         )}

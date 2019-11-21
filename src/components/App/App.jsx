@@ -31,8 +31,3 @@ const App = () => {
 };
 
 export default App;
-// https://r.onliner.by/ak/apartments/483983
-// https://r.onliner.by/ak/apartments/397228
-// https://r.onliner.by/ak/apartments/473878
-// https://r.onliner.by/ak/apartments/482369
-// https://r.onliner.by/ak/apartments/485363
