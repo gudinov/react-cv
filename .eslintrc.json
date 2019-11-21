@@ -14,7 +14,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "react-hooks"
     ],
     "rules": {
         "no-console": "warn",
@@ -32,6 +33,8 @@
         "class-methods-use-this": "off",
         "react/require-default-props": "off",
         "react/jsx-props-no-spreading": "off",
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
     }
 }

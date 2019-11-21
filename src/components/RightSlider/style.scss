@@ -74,6 +74,20 @@
             left: 0;
         }
     }
+
+   &__shadow-content_awake {
+     animation: slide ease-in-out .5s forwards;
+   }
+}
+
+@keyframes slide {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {

@@ -1,21 +1,37 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import About from 'components/RightSlider/About/About';
 import Works from 'components/RightSlider/Works/Work';
 import Education from 'components/RightSlider/Education/Education';
 import Contact from 'components/RightSlider/Contact/Contact';
+import { Scrollbars } from 'react-custom-scrollbars';
+import { EMPTY_CLASS } from 'constants/common';
 
 import './style.scss';
-import { Scrollbars } from 'react-custom-scrollbars';
+import { slideAnimationClass } from './constants';
 
 // TODO: refactoring scrollbar
-const RightSliderScrollbar = ({ children }) => (
-  <article className="right-slider__shadow-content">
-    <Scrollbars className="right-slider__scroll" hideTracksWhenNotNeeded>
-      {children}
-    </Scrollbars>
-  </article>
-);
+const RightSliderScrollbar = withRouter(({ children, location: { pathname } }) => {
+  const [statusAnimation, setStatusAnimation] = useState(false);
+  const rightSliderRef = useRef(null);
+  const addAnimation = () => setStatusAnimation(true);
+  const removeAnimation = () => setStatusAnimation(false);
+
+  useEffect(() => {
+    rightSliderRef.current.addEventListener('animationend', removeAnimation, { once: true });
+    addAnimation();
+
+    return removeAnimation;
+  }, [pathname]);
+
+  return (
+    <article className={`right-slider__shadow-content ${statusAnimation ? slideAnimationClass : EMPTY_CLASS}`} ref={rightSliderRef}>
+      <Scrollbars className="right-slider__scroll" hideTracksWhenNotNeeded>
+        {children}
+      </Scrollbars>
+    </article>
+  );
+});
 
 const RightSlider = () => (
   <main className="right-slider" role="main">
@@ -24,7 +40,7 @@ const RightSlider = () => (
         exact
         path="/"
         render={(props) => (
-          <RightSliderScrollbar>
+          <RightSliderScrollbar {...props}>
             <About {...props} />
           </RightSliderScrollbar>
         )}

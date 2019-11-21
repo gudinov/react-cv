@@ -20,6 +20,10 @@
     align-items: center;
   }
 
+  &__psu-text {
+    padding: 5px;
+  }
+
   & h3 {
     text-align: center;
     color: $primary-theme-content-color;
