@@ -16,4 +16,4 @@ const FREELANCE = {
   textKey: 'freelance-text',
 };
 
-export const WORKS = [CURRENT_TIME, ANDERSEN, FREELANCE];
+export const WORK = [CURRENT_TIME, ANDERSEN, FREELANCE];

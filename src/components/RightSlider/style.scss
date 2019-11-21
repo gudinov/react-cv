@@ -76,16 +76,28 @@
     }
 
    &__shadow-content_awake {
-     animation: slide ease-in-out .5s forwards;
+     animation: slide ease-in-out .3s forwards;
+
+     & .right-slider__scroll {
+       opacity: 0;
+     }
    }
 }
 
 @keyframes slide {
+  to {
+    display: none;
+  }
   from {
+    display: block;
+  }
+}
+
+@keyframes slide {
+  0% {
     width: 0;
   }
-
-  to {
+  100% {
     width: 100%;
   }
 }

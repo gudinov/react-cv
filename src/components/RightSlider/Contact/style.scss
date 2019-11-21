@@ -1,0 +1,25 @@
+.contact {
+  &__list-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 10px 0 10px 0;
+  }
+
+  &__icon {
+    height: 100%;
+    width: 40px;
+    text-align: center;
+
+    & svg {
+      color: $primary-base-yellow-color;
+      font-size: 2rem;
+    }
+  }
+
+  &__mobile,
+  &__email {
+    color: $primary-base-yellow-color;
+    margin-left: 10px;
+  }
+}

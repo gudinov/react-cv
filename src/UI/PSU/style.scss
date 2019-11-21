@@ -1,18 +1,6 @@
 .psu {
   display: inline-block;
 
-  & a {
-    display: inherit;
-    vertical-align: top;
-    border-radius: 100px;
-    transition: all .3s;
-  }
-
-  & a:hover {
-    background: linear-gradient(0deg, $primary-profile-img-a 35%, $primary-profile-img-b 64%, $primary-profile-img-c 100%);
-    box-shadow: inset 1px 1px 8px 0 $primary-base-yellow-color;
-  }
-
   &__logo {
     display: block;
     width: 150px;
