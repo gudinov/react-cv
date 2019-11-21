@@ -58,3 +58,13 @@ h3 {
   font-family: 'Hepta Slab', serif;
   color: $primary-base-white-color;
 }
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+
+  canvas {
+    display: none;
+  }
+}

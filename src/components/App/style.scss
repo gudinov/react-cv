@@ -24,14 +24,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    html {
-        font-size: 10px;
-    }
-
-    canvas {
-        display: none;
-    }
-
     .page-root {
         background: $primary-theme-main-bg-color;
 

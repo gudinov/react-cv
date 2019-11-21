@@ -24,7 +24,7 @@ const CONTACT = {
 };
 
 const CV = {
-  link: 'file:///home/gudinov/CV/for-print/index.html',
+  link: 'https://gudinov.github.io/download-cv/',
   description: 'cv',
   icon: faFile,
   newTab: true,
