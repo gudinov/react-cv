@@ -6,8 +6,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import aboutEn from 'components/RightSlider/About/en/translation.json';
 import aboutRu from 'components/RightSlider/About/ru/translation.json';
 
-import profileEn from 'components/LeftSlider/Profile/en/translation.json';
-import profileRu from 'components/LeftSlider/Profile/ru/translation.json';
+import profileEn from 'components/PersonalInfo/en/translation.json';
+import profileRu from 'components/PersonalInfo/ru/translation.json';
 
 import educationEn from 'components/RightSlider/Education/en/translation.json';
 import educationRu from 'components/RightSlider/Education/ru/translation.json';
@@ -28,7 +28,7 @@ const resources = {
   },
   ru: {
     about: aboutRu,
-    profile: profileRu,
+    personalInfo: profileRu,
     education: educationRu,
     contact: contactRu,
     works: worksRu,

@@ -1,15 +1,22 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
-
+import PersonalInfo from 'components/PersonalInfo/PersonalInfo';
 import Tech from 'UI/Tech/Tech';
-import { SKILL_ITEMS } from './constants';
 
 import './style.scss';
+
+import { SKILL_ITEMS } from './constants';
 
 function About({ t }) {
   return (
     <div className="about right-slider__content-wrapper">
       <section className="about__me about_underline">
+        <div className="about__profile mobile-content">
+          <div className="about__avatar-wrapper">
+            <span className="about__avatar about__avatar_circle" />
+          </div>
+          <PersonalInfo />
+        </div>
         <h1>{t('about-title')}</h1>
         <div className="about__info-list text_size-L">
           <div className="about__info-item about__info-item_deco-line">

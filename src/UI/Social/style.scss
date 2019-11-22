@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  & li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  & a {
+    text-align: center;
+  }
+
+  & svg {
+    font-size: 1.7rem;
+    line-height: 2;
+    color: $primary-theme-content-color;
+    transition: color .3s ease-in;
+  }
+}

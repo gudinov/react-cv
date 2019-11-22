@@ -36,44 +36,6 @@
         height: 100%;
         background: linear-gradient(0deg, $primary-profile-img-a 35%, $primary-profile-img-b 64%, $primary-profile-img-c 100%);
     }
-
-    &__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-    }
-
-    &__social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10%;
-        margin-bottom: 20%;
-
-        & li {
-            margin-right: 15px;
-            margin-left: 15px;
-        }
-
-        & a {
-            text-align: center;
-        }
-
-        & svg {
-            font-size: 1.7rem;
-            line-height: 2;
-            color: $primary-theme-content-color;
-            transition: color .3s ease-in;
-        }
-    }
-
-    &__name {
-        font-weight: bold;
-        color: $primary-base-white-color;
-    }
 }
 
 .skype:hover svg,
