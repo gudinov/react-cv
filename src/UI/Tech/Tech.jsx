@@ -12,14 +12,8 @@ class Tech extends PureComponent {
     return (
       <div className="tech">
         {
-            map(items, (block, blockIndex) => (
-              <div className="tech__block" key={blockIndex}>
-                {
-                      map(block, (item, itemIndex) => (
-                        <TechItem name={item.name} icon={item.icon} key={`${blockIndex}-${itemIndex}`} />
-                      ))
-                  }
-              </div>
+            map(items, (item, i) => (
+              <TechItem name={item.name} icon={item.icon} key={`${i}`} />
             ))
         }
       </div>

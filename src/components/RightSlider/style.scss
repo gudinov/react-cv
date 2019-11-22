@@ -74,32 +74,6 @@
             left: 0;
         }
     }
-
-   &__shadow-content_awake {
-     animation: slide ease-in-out .3s forwards;
-
-     & .right-slider__scroll {
-       opacity: 0;
-     }
-   }
-}
-
-@keyframes slide {
-  to {
-    display: none;
-  }
-  from {
-    display: block;
-  }
-}
-
-@keyframes slide {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -116,9 +90,5 @@
             padding: 3% 0 3% 3%;
             margin: 0;
         }
-
-      &__shadow-content_awake {
-        animation: slide ease-in-out .3s forwards;
-      }
     }
 }

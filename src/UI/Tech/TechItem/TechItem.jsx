@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 
 function TechItem({ name, icon }) {
   return (
-    <section className={`tech__item ${name}`} key={name}>
+    <figure className={`tech__item ${name}`}>
       <span className="tech__icon">
         <FontAwesomeIcon icon={icon} />
       </span>
       <div className="tech__name">{upperFirst(name)}</div>
-    </section>
+    </figure>
   );
 }
 

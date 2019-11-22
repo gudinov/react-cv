@@ -26,7 +26,7 @@ const Profile = ({ i18n, t }) => {
         </div>
       </div>
       <div className="profile__info">
-        <h2 className="profile__name title_size-L">{startCase(t('name'))}</h2>
+        <h2 className="profile__name title_size-M">{startCase(t('name'))}</h2>
         <div className="profile__position">
           <h3 className="title title_size-XS">{t('position')}</h3>
         </div>

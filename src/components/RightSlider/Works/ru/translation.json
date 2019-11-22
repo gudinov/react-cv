@@ -1,12 +1,12 @@
 {
-    "works-title": "work",
-    "current-time-date":  "current time",
-    "current-time-title":  "current time title",
-    "current-time-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda cumque deserunt dolores ducimus eius est inventore iusto.",
+    "works-title": "опыт",
+    "current-time-date":  "настоящее время",
+    "current-time-title":  "",
+    "current-time-text": "Развиваюсь как специалист, используя свои навыки на практике. Занимаюсь изучением новых технологий. Готов примкнуть к команде разработчиков. // дополнить какими-то целями",
     "andersen-date":  "2017-2018",
     "andersen-title":  "Andersen",
-    "andersen-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda cumque deserunt dolores ducimus eius est inventore iusto.",
+    "andersen-text": "Разработка компонентов пользовательского интерфейса. Оптимизация и обслуживание веб-приложений. Адаптация страниц под мобильные устройства. Основной стек технологий: HTML5 + SCSS/LESS  + React / Angular 4.",
     "freelance-date":  "2016-2017",
     "freelance-title":  "Freelance",
-    "freelance-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda cumque deserunt dolores ducimus eius est inventore iusto."
+    "freelance-text": "Создание сайтов под ключ: верстка новых страниц из PSD макетов. Реализация JavaScript логики (слайдеры, попапы, анимации и т.д.) с использованием сторонних библиотек таких, как jQuery и др.. Основной стек технологий: HTML5 + CSS3  + JavaScript(jQuery)."
 }

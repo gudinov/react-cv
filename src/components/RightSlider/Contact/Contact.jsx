@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMobile, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 import './style.scss';
 
@@ -21,6 +21,12 @@ function Contact({ t }) {
             <FontAwesomeIcon icon={faEnvelope} />
           </span>
           <span className="contact__email">gudinov.vladislav@gmail.com</span>
+        </li>
+        <li className="contact__list-item">
+          <span className="contact__icon">
+            <FontAwesomeIcon icon={faMapMarkerAlt} />
+          </span>
+          <span className="contact__location">{t('contact-location')}</span>
         </li>
       </ul>
       <div className="contact__text">{t('contact-text')}</div>

@@ -47,8 +47,4 @@ const GULP = {
   icon: faGulp,
 };
 
-export const SKILL_ITEMS = [
-  [HTML, CSS, JS],
-  [SASS, LESS],
-  [ANGULAR, REACT],
-];
+export const SKILL_ITEMS = [HTML, CSS, JS, SASS, LESS, ANGULAR, REACT];

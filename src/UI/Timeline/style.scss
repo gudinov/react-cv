@@ -31,6 +31,7 @@
     }
 
     &:before {
+      max-width: 80px;
       left: calc((((5vw * 0.6) + 50px + 4px + 1px + (4px * 2)) * 1.5) * -1);
       content: attr(data-date);
       text-align: right;
