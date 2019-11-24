@@ -1,13 +1,6 @@
 import React from 'react';
 import PersonalInfo from 'components/PersonalInfo/PersonalInfo';
 
-import { EN, RU } from './constants';
-// const isRu = i18n.language === RU;
-//
-// const onChangeLanguage = () => {
-//   i18n.changeLanguage(isRu ? EN : RU);
-// };
-
 import './style.scss';
 
 const Profile = () => (

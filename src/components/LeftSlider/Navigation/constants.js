@@ -24,7 +24,7 @@ const CONTACT = {
 };
 
 const CV = {
-  link: 'https://gudinov.github.io/download-cv/',
+  link: 'https://gudinov.github.io/pdf-cv',
   description: 'cv',
   icon: faFile,
   newTab: true,
@@ -44,3 +44,10 @@ export const NAVIGATIONS = [
   CONTACT,
   CV,
 ];
+
+export const RU = 'ru';
+export const EN = 'en';
+export const CODE_LANG = {
+  ru: 'rus',
+  en: 'us',
+};
