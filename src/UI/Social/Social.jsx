@@ -8,17 +8,17 @@ function Social() {
   return (
     <ul className="social">
       <li className="social__skype">
-        <a href="/" className="skype">
+        <a href="skype:vlaad161997" className="skype">
           <FontAwesomeIcon icon={faSkype} />
         </a>
       </li>
       <li className="social__vk">
-        <a href="/" className="vk">
+        <a href="https://vk.com/id211629515" target="_blank" rel="noopener noreferrer" className="vk">
           <FontAwesomeIcon icon={faVk} />
         </a>
       </li>
       <li className="social__telegram">
-        <a href="/" className="telegram">
+        <a href="https://t.me/Endlessuser" target="_blank" rel="noopener noreferrer" className="telegram">
           <FontAwesomeIcon icon={faTelegram} />
         </a>
       </li>

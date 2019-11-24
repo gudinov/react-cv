@@ -30,7 +30,10 @@ function Contact({ t }) {
           <span className="contact__location">{t('contact-location')}</span>
         </li>
       </ul>
-      <div className="contact__text">{t('contact-text')}</div>
+      <div className="contact__text">
+        {t('contact-text')}
+        <a href="https://github.com/gudinov" target="_blank" rel="noopener noreferrer">https://github.com/gudinov</a>
+      </div>
     </div>
   );
 }

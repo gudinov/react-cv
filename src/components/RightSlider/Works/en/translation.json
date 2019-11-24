@@ -1,12 +1,12 @@
 {
-  "works-title": "work",
-  "current-time-date":  "current time",
-  "current-time-title":  "current time title",
-  "current-time-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda cumque deserunt dolores ducimus eius est inventore iusto.",
+  "works-title": "experience",
+  "current-time-date":  "present ",
+  "current-time-title":  "",
+  "current-time-text": "Continue the career of a front-end developer, constantly developing and improving your skills.",
   "andersen-date":  "2017-2018",
   "andersen-title":  "Andersen",
-  "andersen-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda cumque deserunt dolores ducimus eius est inventore iusto.",
+  "andersen-text": "Development of user interface components. Optimization and maintenance of web applications. Adapting pages for mobile devices. Main technology stack: HTML5 + SCSS / LESS + React / Angular 4.",
   "freelance-date":  "2016-2017",
   "freelance-title":  "Freelance",
-  "freelance-text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda cumque deserunt dolores ducimus eius est inventore iusto."
+  "freelance-text": "Turnkey website development: layout of new pages from PSD layouts. Implementation of JavaScript logic (sliders, popups, animations, etc.) using third-party libraries such as jQuery and others. Main technology stack: HTML5 + CSS3 + JavaScript (jQuery)."
 }

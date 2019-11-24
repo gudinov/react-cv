@@ -17,6 +17,16 @@
     }
   }
 
+  &__text {
+    & a {
+      text-decoration: underline;
+    }
+
+    & a:hover {
+      color: $primary-base-yellow-color;
+    }
+  }
+
   &__mobile,
   &__email,
   &__location {

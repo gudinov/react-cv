@@ -21,7 +21,7 @@ import worksRu from 'components/RightSlider/Works/ru/translation.json';
 const resources = {
   en: {
     about: aboutEn,
-    profile: profileEn,
+    personalInfo: profileEn,
     education: educationEn,
     contact: contactEn,
     works: worksEn,
@@ -41,7 +41,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'ru',
+    lng: 'en',
     interpolation: {
       escapeValue: false,
     },

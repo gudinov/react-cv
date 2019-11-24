@@ -1,9 +1,9 @@
 {
     "about-title": "about me",
-    "about-text": "Versatile Front-end Developer with 2+ years of experience designing, developing, and managing complex e-commerce sites and internal frameworks. Specializes in Angular, React and responsive design.",
+    "about-text": "Purposeful Front-end developer with 2 years of experience in developing e-commerce and Landing Page projects. Responsible, persistent, attentive to details. I am ready to study of new technologies and ready to take on tasks of any complexity. I constantly work on myself, improving my not only professional skills, but also my personal qualities. I interact well with the team, in the process of work I weigh all decisions, adequately respond to criticism. As a hobby, I am creating 3d models in the Blender environment.",
     "year": "years",
     "city": "minsk",
     "country": "belarus",
     "skills-title": "skills",
-    "skills-text": "Web Developer with 2 years of experience in designing and developing user interfaces, testing, debugging, and training staff within eCommerce technologies. Proven ability in optimizing web functionality that improve data retrieval and workflow efficiencies."
+    "skills-text": "I am engaged in the creation of UX / UI design, development of web projects of any complexity. I have a solid knowledge of HTML, CSS and JavaScript. I try to keep up with the times, using the latest technologies where they are required, and also study them. My main frameworks: React, Angular. I use package managers such as npm or yarn, less and sass preprocessors, as well as various libraries (Redux, Flux, Material Design, etc.) I configure and build project by webpack."
   }
