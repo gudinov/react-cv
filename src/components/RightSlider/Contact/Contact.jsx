@@ -15,13 +15,13 @@ function Contact({ t }) {
           <span className="contact__icon">
             <FontAwesomeIcon icon={faMobile} />
           </span>
-          <span className="contact__mobile">+375 33 645 03 80</span>
+          <a href="tel:+375336450380" className="contact__mobile">+375(33)-645-03-80</a>
         </li>
         <li className="contact__list-item">
           <span className="contact__icon">
             <FontAwesomeIcon icon={faEnvelope} />
           </span>
-          <span className="contact__email">gudinov.vladislav@gmail.com</span>
+          <a href="mailto:gudinov.vladislav@gmail.com" className="contact__email">gudinov.vladislav@gmail.com</a>
         </li>
         <li className="contact__list-item">
           <span className="contact__icon">
