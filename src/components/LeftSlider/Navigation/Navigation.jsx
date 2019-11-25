@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Flag from 'react-world-flags';
 import map from 'lodash/map';
-import i18n from 'i18next';
+import { useTranslation } from 'react-i18next';
 import { withRouter } from 'react-router-dom';
 import checkPath from 'utils/checkPath';
 import NavButton from 'UI/NavButton/NavButton';
@@ -12,25 +12,22 @@ import {
 
 import './style.scss';
 
+
 const Navigation = ({ location: { pathname } }) => {
-  const [lang, setLang] = useState(localStorage.getItem('current_lang') || RU);
-
-  useEffect(() => {
-    localStorage.setItem('current_lang', lang);
-    i18n.changeLanguage(lang);
-  }, [lang]);
-
-  const onChangeLangClick = () => {
-    const newLang = lang === RU ? EN : RU;
-    setLang(newLang);
+  const { i18n } = useTranslation();
+  const changeLang = (newLang) => {
+    localStorage.setItem('current_lang', newLang);
+    i18n.changeLanguage(newLang).then(() => {});
   };
+  const onChangeLangClick = () => changeLang(i18n.language === RU ? EN : RU);
+
 
   return (
     <nav className="nav">
       <ul>
         {
             map(NAVIGATIONS, (item) => {
-              const link = item.newTab ? `${item.link}-${lang}/` : item.link;
+              const link = item.newTab ? `${item.link}-${i18n.language}/` : item.link;
               return (
                 <li key={link} className="nav__wrapper-button">
                   <NavButton link={link} icon={item.icon} isActive={checkPath(link, ABOUT.link, pathname)} newTab={item.newTab} />
@@ -40,7 +37,7 @@ const Navigation = ({ location: { pathname } }) => {
         }
       </ul>
       <div className="nav__wrapper-button nav__wrapper-button_empty nav__wrapper-button_bottom" onClick={onChangeLangClick}>
-        <Flag code={CODE_LANG[lang]} height="15" />
+        <Flag code={CODE_LANG[i18n.language]} height="15" />
       </div>
     </nav>
   );
