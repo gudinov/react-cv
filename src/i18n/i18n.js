@@ -48,4 +48,3 @@ i18n
       wait: true,
     },
   }).then((r) => r);
-

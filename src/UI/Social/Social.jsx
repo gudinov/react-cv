@@ -18,7 +18,7 @@ function Social() {
         </a>
       </li>
       <li className="social__telegram">
-        <a href="https://t.me/Endlessuser" target="_blank" rel="noopener noreferrer" className="telegram">
+        <a href="https://t.me/wbnkk" target="_blank" rel="noopener noreferrer" className="telegram">
           <FontAwesomeIcon icon={faTelegram} />
         </a>
       </li>
